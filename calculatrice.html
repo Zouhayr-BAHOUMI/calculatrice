@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <title>Calculatrice</title>
 </head>
 
@@ -12,37 +15,41 @@
 <body>
     <div class="container">
         <div class="resultat">
-            <input type="" name="resultat">
+            <input type="text" name="resultat" class="resultat">
+            <!-- <span class="resultat">0</span> -->
         </div>
-        <div class="row">
-            <button>AC</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>/</button>
+        <div class="rows">
+            <div class="row">
+                <button class="button" data-action="clear">AC</button>
+                <button class="button" data-action="delete">DEL</button>
+                <button class="button" data-action="rest">%</button>
+                <button class="button" data-action="div">/</button>
+            </div>
+            <div class="row">
+                <button class="button" data-number="7">7</button>
+                <button class="button" data-number="8">8</button>
+                <button class="button" data-number="9">9</button>
+                <button class="button" data-action="multiplication">*</button>
+            </div>
+            <div class="row">
+                <button class="button" data-number="6">6</button>
+                <button class="button" data-number="5">5</button>
+                <button class="button" data-number="4">4</button>
+                <button class="button" data-action="soustraction">-</button>
+            </div>
+            <div class="row">
+                <button class="button" data-number="3">3</button>
+                <button class="button" data-number="2">2</button>
+                <button class="button" data-number="1">1</button>
+                <button class="button" data-action="add">+</button>
+            </div>
+            <div class="row">
+                <button class="button" data-number="0">0</button>
+                <button class="button" data-number=".">.</button>
+                <button class="button" data-action="equal">=</button>
+            </div>
         </div>
-        <div class="row">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-        </div>
-        <div class="row">
-            <button>6</button>
-            <button>5</button>
-            <button>4</button>
-            <button>-</button>
-        </div>
-        <div class="row">
-            <button>3</button>
-            <button>2</button>
-            <button>1</button>
-            <button>+</button>
-        </div>
-        <div class="row">
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-        </div>
+        
     </div>
     <script src="main.js"></script>
 </body>

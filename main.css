@@ -1,0 +1,50 @@
+html {
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Space Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ADC7CF;
+}
+
+.container{
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 0.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+.rows{
+    background-color: #F0F4F9;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding: 1.6rem;
+    grid-column: span 2;
+    margin-top: 2rem;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+button{
+    margin: 0.4rem;
+    padding: 1.4rem;
+    border: 1px white solid;
+    background-color: #F0F4F9;
+    font-size: 2.8rem;
+}
+
+.resultat input{
+    padding: 1.3rem;
+}
