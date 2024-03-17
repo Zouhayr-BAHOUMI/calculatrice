@@ -23,6 +23,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    margin: 0 2rem;
 }
 .rows{
     background-color: #F0F4F9;
@@ -45,6 +46,17 @@ button{
     font-size: 2.8rem;
 }
 
+.equal{
+    width: 190%;
+}
 .resultat input{
     padding: 1.3rem;
+    font-size: 8rem;
+}
+
+
+@media (max-width: 768px) {
+    button{
+        font-size: 1.4rem;
+    }
 }
