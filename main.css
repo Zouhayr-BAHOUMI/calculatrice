@@ -38,6 +38,20 @@ body{
     grid-template-columns: repeat(4,1fr);
 }
 
+.row .color{
+    background-color: #ADC7CF;
+}
+
+.equal{
+    background-color: #39A0FF;
+    color: #F0F4F9;
+}
+
+.colorBlue{
+    color: #39A0FF;
+}
+
+
 button{
     margin: 0.4rem;
     padding: 1.4rem;
@@ -51,7 +65,7 @@ button{
 }
 .resultat input{
     padding: 1.3rem;
-    font-size: 8rem;
+    font-size: 20px;
 }
 
 
